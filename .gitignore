@@ -1,0 +1,27 @@
+# Built binaries and tools
+android-cli
+android_wrapper
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Gradle & Kotlin build caches
+.gradle/
+.kotlin/
+build/
+**/build/
+**/.gradle/
+**/.kotlin/
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+**/.idea/
+local.properties
+**/local.properties
+captures/
+**/captures/
+.externalNativeBuild/
+.cxx/

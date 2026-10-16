@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#958ea0", "surface-container-high": "#262a37", "on-surface-variant": "#cbc3d7", "secondary": "#4cd7f6", "tertiary-fixed": "#ffddb8", "tertiary-container": "#ca8100", "surface-container-highest": "#313442", "secondary-fixed-dim": "#4cd7f6", "surface-variant": "#313442", "tertiary": "#ffb95f", "primary": "#d0bcff", "primary-container": "#a078ff", "on-primary-fixed": "#23005c", "surface-tint": "#d0bcff", "primary-fixed-dim": "#d0bcff", "outline-variant": "#494454", "on-primary": "#3c0091", "on-secondary-fixed-variant": "#004e5c", "surface-bright": "#353946", "error-container": "#93000a", "secondary-fixed": "#acedff", "surface-container-low": "#171b28", "surface-dim": "#0f131f", "on-tertiary-fixed": "#2a1700", "on-error": "#690005", "on-tertiary-container": "#3e2400", "surface": "#0f131f", "background": "#0f131f", "secondary-container": "#03b5d3", "surface-container-lowest": "#0a0e1a", "error": "#ffb4ab", "on-tertiary": "#472a00", "on-secondary": "#003640", "on-primary-container": "#340080", "on-tertiary-fixed-variant": "#653e00", "on-primary-fixed-variant": "#5516be", "on-secondary-container": "#00424e", "inverse-primary": "#6d3bd7", "on-surface": "#dfe2f3", "on-background": "#dfe2f3", "inverse-on-surface": "#2c303d", "on-error-container": "#ffdad6", "surface-container": "#1b1f2c", "on-secondary-fixed": "#001f26", "tertiary-fixed-dim": "#ffb95f", "primary-fixed": "#e9ddff", "inverse-surface": "#dfe2f3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xl": "2rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-md": [ "Inter" ], "label-sm": [ "JetBrains Mono" ], "label-lg": [ "JetBrains Mono" ], "body-lg": [ "Inter" ] }, "fontSize": { "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-xl": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #0f131f; color: #dfe2f3; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Cadence Music Theory Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFzKvSsflsZ7_MY-cSwddT6fgIaI3T61RjF1XCqTz5QjmmGZfgiCADqvITxmybTvsfZyx1_t5Eql9hnmq1rwqLrqhzQC9xafc8U-KGD92zFkJCRj3GTB9R5Epivog3yRK96AmywflxFTvHFqXzlIy4XYMrjDQCQfZPTJk3hxLZgsF6yQLy2IBfx9T1SrQqExsfXQJfJAglm3c1M7tSrOOh9Ar4W0fleWgz9xr_nUqlpEjxzArzXWBJ"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-surface leading-none">Cadence</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Learn</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md"><span class="text-tertiary text-sm leading-none">🔥</span><span class="font-label-md text-label-md text-tertiary font-semibold">14</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md"><span class="material-symbols-outlined text-secondary text-[16px] leading-none">diamond</span><span class="font-label-md text-label-md text-secondary font-semibold">1,240</span></div><button class="w-11 h-11 flex items-center justify-center p-0 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL9eWYtmVwcYwOLh6ZbVZp-lGucVP7kd7wng9nSwDyOWEWKh5VaWD5g5XitHeDgWYZLDZf4qG-JsMPBwHIM-H40zWAPsg_U_lA20JDJm0wvq66u9JTOBnGXg6klP6uBsAQFUx1Jn-9lLSD5EdqYfZq5SroaWBNNm0rkNKBbMLDOKu9D53rYcW8s5Q37-zfsAGgXQp-ZtYDoxPYZ9wsjplW36PwhjTqernW9egobZ8tx_YrAWrGNuBh"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-gutter space-y-space-lg select-none pb-6">
+<!-- Greeting & Daily Status Header -->
+<section class="flex flex-col space-y-space-xs pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary font-semibold flex items-center gap-1.5">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4cd7f6] animate-pulse"></span>
+        Studio Mode Active
+      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sat, Oct 26</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">
+      Welcome back, Alex!
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Ready for your daily ear and theory workout? Master root inversions today.
+    </p>
+</section>
+<!-- Daily Goal & Streak Glass Widget (Bento Style) -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md shadow-xl">
+<!-- Subtle gradient wash -->
+<div class="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-40 h-40 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-space-md">
+<!-- Top Row: Streak and XP -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap- space-sm">
+<div class="relative flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high shadow-md">
+<span class="text-xl transform hover:scale-110 transition-transform">🔥</span>
+<div class="absolute -inset-0.5 rounded-xl bg-tertiary/20 blur-sm pointer-events-none"></div>
+</div>
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-tertiary">14</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Days</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Unstoppable groove</p>
+</div>
+</div>
+<div class="flex items-center gap- space-xs bg-surface-container-high/80 px-space-sm py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-md text-label-md text-secondary font-bold">+120 XP</span>
+</div>
+</div>
+<!-- Bottom Row: Progress Ring & Daily Lessons Tracker -->
+<div class="flex items-center gap-space-md bg-surface-container/60 p-space-sm rounded-lg backdrop-blur-md">
+<!-- SVG Progress Ring (85%) -->
+<div class="relative w-12 h-12 flex-shrink-0 flex items-center justify-center">
+<svg class="w-12 h-12 -rotate-90 transform" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary transition-all duration-1000 ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="85, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-on-surface">85%</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Daily Cadence</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">3 of 4 Done</span>
+</div>
+<!-- Step dots -->
+<div class="grid grid-cols-4 gap-1.5 h-1.5 w-full">
+<div class="rounded-full bg-primary shadow-[0_0_6px_rgba(208,188,255,0.4)]"></div>
+<div class="rounded-full bg-primary shadow-[0_0_6px_rgba(208,188,255,0.4)]"></div>
+<div class="rounded-full bg-primary shadow-[0_0_6px_rgba(208,188,255,0.4)]"></div>
+<div class="rounded-full bg-surface-container-highest animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 'Continue Learning' Active Hero Banner -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-2xl flex flex-col space-y-space-md group">
+<!-- Neon Backdrop Glow -->
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/20 rounded-full blur-3xl pointer-events-none group-hover:bg-primary/30 transition-all duration-500"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+            Unit 3
+          </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Lesson 4 of 8</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mt-1">
+          Root vs 1st Inversion
+        </h2>
+<p class="font-label-md text-label-md text-secondary font-medium">
+          Cmaj <span class="text-on-surface-variant font-body-sm">(C-E-G)</span> → Cmaj/E <span class="text-on-surface-variant font-body-sm">(E-G-C)</span>
+</p>
+</div>
+<!-- Tactile Mini Audio Preview Badge -->
+<button aria-label="Preview chord tone inversion" class="w-11 h-11 rounded-xl bg-surface-container-high hover:bg-surface-bright active:scale-95 text-secondary flex items-center justify-center shadow-md transition-all relative overflow-hidden" id="previewChordBtn">
+<span class="material-symbols-outlined text-[24px]">volume_up</span>
+<span class="absolute inset-0 bg-secondary/10 opacity-0 active:opacity-100 transition-opacity"></span>
+</button>
+</div>
+<!-- Interactive Visual Staff / Chord Slice Mock -->
+<div class="relative bg-surface-container-lowest/70 rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">graphic_eq</span>
+<span>Acoustic Piano (Tuned)</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>Mod. Tempo</span>
+</div>
+</div>
+<!-- Progress Track -->
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Curriculum Progress</span>
+<span class="text-on-surface font-semibold">60%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full w-[60%] shadow-[0_0_8px_rgba(76,215,246,0.5)]"></div>
+</div>
+</div>
+<!-- Big Shiny Resume CTA -->
+<button class="w-full py-3.5 px-space-md rounded-xl bg-gradient-to-r from-primary-container to-primary text-on-primary font-headline-md text-[16px] font-bold tracking-tight flex items-center justify-center gap-2 shadow-[0_0_24px_-4px_rgba(160,120,255,0.6)] hover:brightness-110 active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+      Resume Lesson
+    </button>
+</section>
+<!-- Interactive Gamified Learning Path Nodes -->
+<section class="flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">Solfège Path</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sequential ear &amp; structural mastery</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-medium">
+        Stage 1: Core Harmony
+      </span>
+</div>
+<!-- Path Container with Visual SVG Conduit Line -->
+<div class="relative py-2 flex flex-col items-center">
+<!-- Center Connector Line (Curved Path Canvas) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<path d="M 180 50 Q 240 120 180 170 T 180 290 T 180 410 T 180 530" fill="none" stroke="#313442" stroke-dasharray="6 6" stroke-linecap="round" stroke-width="3"></path>
+<path d="M 180 50 Q 240 120 180 170 T 180 290" fill="none" opacity="0.8" stroke="#4cd7f6" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<!-- Nodes List (Alternating serpentine alignment) -->
+<div class="relative z-10 w-full flex flex-col space-y-7">
+<!-- Node 1: Completed -->
+<div class="flex items-center justify-center translate-x-2">
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-high shadow-lg hover:scale-105 transition-all">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="absolute -bottom-2 flex gap-0.5 bg-surface-container-highest px-2 py-0.5 rounded-full shadow-sm">
+<span class="text-[10px] text-tertiary">★</span>
+<span class="text-[10px] text-tertiary">★</span>
+<span class="text-[10px] text-tertiary">★</span>
+</div>
+</div>
+<span class="mt-2.5 font-label-md text-label-md text-on-surface font-semibold text-center max-w-[140px] leading-tight">
+              1. Alphabet &amp; Staves
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Mastered</span>
+</div>
+</div>
+<!-- Node 2: Completed -->
+<div class="flex items-center justify-center -translate-x-8">
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-high shadow-lg hover:scale-105 transition-all">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">tune</span>
+<div class="absolute -bottom-2 flex gap-0.5 bg-surface-container-highest px-2 py-0.5 rounded-full shadow-sm">
+<span class="text-[10px] text-tertiary">★</span>
+<span class="text-[10px] text-tertiary">★</span>
+<span class="text-[10px] text-tertiary">★</span>
+</div>
+</div>
+<span class="mt-2.5 font-label-md text-label-md text-on-surface font-semibold text-center max-w-[140px] leading-tight">
+              2. Intervals &amp; Semitones
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Mastered</span>
+</div>
+</div>
+<!-- Node 3: Current Active (Glowing Pulsing Cyan Node) -->
+<div class="flex items-center justify-center translate-x-6">
+<div class="flex flex-col items-center group cursor-pointer relative">
+<!-- Pulsing Wave Ping -->
+<div class="absolute -inset-2 rounded-full bg-secondary/30 animate-ping pointer-events-none opacity-75"></div>
+<div class="relative flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-secondary to-primary-container text-on-secondary shadow-[0_0_36px_#4cd7f6] transform hover:scale-105 transition-all">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">piano</span>
+<div class="absolute -top-1.5 -right-1 bg-tertiary text-on-tertiary-container text-[11px] font-bold px-2 py-0.5 rounded-full shadow-md">
+                CURRENT
+              </div>
+</div>
+<span class="mt-2.5 font-headline-md text-[15px] text-on-surface font-bold text-center max-w-[150px] leading-tight">
+              3. Triad Construction
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Lesson 4 of 8</span>
+</div>
+</div>
+<!-- Node 4: Locked -->
+<div class="flex items-center justify-center -translate-x-6 opacity-60 hover:opacity-75 transition-opacity">
+<div class="flex flex-col items-center">
+<div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-low shadow-inner">
+<span class="material-symbols-outlined text-outline text-[24px]">lock</span>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface-variant font-medium text-center max-w-[140px] leading-tight">
+              4. Dominant 7ths &amp; Sus
+            </span>
+<span class="font-label-sm text-label-sm text-outline">Unlocks at Level 3</span>
+</div>
+</div>
+<!-- Node 5: Locked -->
+<div class="flex items-center justify-center translate-x-3 opacity-40">
+<div class="flex flex-col items-center">
+<div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-lowest shadow-inner">
+<span class="material-symbols-outlined text-outline text-[24px]">lock</span>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface-variant font-medium text-center max-w-[140px] leading-tight">
+              5. Modal Cadences
+            </span>
+<span class="font-label-sm text-label-sm text-outline">Locked</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Practice Drills Section (Horizontal Scroll/Stack) -->
+<section class="flex flex-col space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">Quick Drills</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5 cursor-pointer">
+        View All <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Drill 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">timer</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">5-Min Interval Sprint</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Minor 3rd vs Perfect 5th ear testing</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="font-label-sm text-label-sm text-primary font-bold px-2 py-1 rounded-md bg-surface-container-high">+35 XP</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-0.5 transition-transform text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Drill 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">music_note</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Treble Clef Sight Sprint</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Identify ledger lines at 120 BPM</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold px-2 py-1 rounded-md bg-surface-container-high">+45 XP</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-0.5 transition-transform text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Drill 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Perfect Pitch Warmup</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Single note frequency isolation</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="font-label-sm text-label-sm text-tertiary font-bold px-2 py-1 rounded-md bg-surface-container-high">+20 XP</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-0.5 transition-transform text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Theory Tip of the Day Card -->
+<section class="rounded-xl bg-gradient-to-br from-surface-container to-surface-container-low p-space-md shadow-lg space-y-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">lightbulb</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Theory Insight</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Nugget</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[17px] text-on-surface font-bold">Why Minor Chords Feel Somber</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+        It hinges on the <span class="text-tertiary font-medium">flattened 3rd interval</span>. A Major 3rd spans 4 semitones (bright resonance), while a Minor 3rd narrows down to <span class="text-secondary font-mono font-medium">3 semitones</span>, imparting that melancholic tension.
+      </p>
+</div>
+<!-- Mini Piano Micro Visualizer -->
+<div class="pt-2 flex items-center gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        C to E♭ = 3 Semitones (Minor)
+      </div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest/60 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+        C to E = 4 Semitones (Major)
+      </div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for Chord Preview CTA
+  const previewBtn = document.getElementById('previewChordBtn');
+  if (previewBtn) {
+    previewBtn.addEventListener('click', () => {
+      previewBtn.classList.add('scale-90', 'text-primary');
+      setTimeout(() => {
+        previewBtn.classList.remove('scale-90', 'text-primary');
+      }, 250);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary bg-primary/10 shadow-[0_0_16px_rgba(208,188,255,0.25)]"><div class="h-20 px-space-sm flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] h-14 rounded-xl px-space-xs py-1 transition-all duration-200 group text-primary bg-primary/10 shadow-[0_0_16px_rgba(208,188,255,0.25)]" data-path="learn" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-110 transition-transform">school</span><span class="font-label-sm text-label-sm font-medium tracking-wide">Learn</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-14 rounded-xl px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-all duration-200 group" data-path="lab" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-110 transition-transform">piano</span><span class="font-label-sm text-label-sm font-medium tracking-wide">Lab</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-14 rounded-xl px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-all duration-200 group" data-path="quiz" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-110 transition-transform">graphic_eq</span><span class="font-label-sm text-label-sm font-medium tracking-wide">Quiz</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-14 rounded-xl px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-all duration-200 group" data-path="reference" href="#"><span class="material-symbols-outlined text-[24px] mb-0.5 group-hover:scale-110 transition-transform">album</span><span class="font-label-sm text-label-sm font-medium tracking-wide">Reference</span></a></div></nav></body></html>
